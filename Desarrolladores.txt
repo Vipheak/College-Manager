@@ -1,6 +1,7 @@
 ##########################################################################
-# Nombre Completo	            #	Matricula #	E-mail 		                   #
+# Nombre Completo	            #	Matricula #	E-mail 		 #
 ##########################################################################
-# Eduardo Lopez Garcia	      # 1589201   # Ed@vipheak.com	             #
-# Alexis Castro Gonzalez      # 1838353   # alexiscastro-glz@outlook.com #
-##########################################################################
+# Eduardo Lopez Garcia	      # 1589201   # Ed@vipheak.com	         #
+# Alexis Castro Gonzalez      # 1838353   # alexiscastro-glz@outlook.com ##########
+# Jose Guadalupe Rodriguez Palacios #1738673	#jose_undertaker@live.com	  #
+###################################################################################
