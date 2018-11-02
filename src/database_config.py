@@ -12,13 +12,17 @@ class DBConfig(QDialog):
         uic.loadUi("src/ui/dbconfig.ui", self);
         #uic.loadUi(os.path.dirname(os.path.realpath(sys.argv[0])) + "/ui/dbconfig.ui", self);
 
+        stylesheet = QFile("assets/qss/dialog.qss");
+        stylesheet.open(QIODevice.ReadWrite | QIODevice.Text);
+        self.setStyleSheet(QTextStream(stylesheet).readAll());
+
         self.port.setMinimum(1);
         self.port.setMaximum(65536);
 
         f = QFile("config/database.config");
         if f.open(QIODevice.ReadWrite | QIODevice.Text):
 
-            # FIX ME : START : 
+            # FIX ME : START :
             name = f.readLine(255);
             username = f.readLine(255);
             password = f.readLine(255); # ValueError: invalid literal for int() with base 10: ''
