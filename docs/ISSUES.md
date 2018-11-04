@@ -1,6 +1,6 @@
 # ISSUES
 
-### Error en /src/database_config.py
+### Error en /src/database_config.py ![issueresolved](https://img.shields.io/badge/issue-resolved-brightgreen.svg) [![saythanks](https://img.shields.io/badge/JoseRDZ1999-thanks-ff69b4.svg)](https://github.com/JoseRDZ1999)
 ###### *Al guardar los datos de port se guardan correctamente en /config/database.config pero al leerlos se eliminan dos dígitos.*
 
 * ##### Posible error en el método `setupUi()`.
