@@ -27,14 +27,14 @@ class DBConfig(QDialog):
             username = f.readLine(255);
             password = f.readLine(255); # ValueError: invalid literal for int() with base 10: ''
             hostname = f.readLine(255);
-            port = f.readLine(21);
+            port = f.readLine(1000);
             f.close();
 
             self.dbName.setText(str(name)[17:-3]);
             self.username.setText(str(username)[21:-3]);
             self.password.setText(str(password)[21:-3]); #V alueError: invalid literal for int() with base 10: ''
             self.hostname.setText(str(hostname)[21:-3]);
-            self.port.setValue(int(str(port)[17:-3]));
+            self.port.setValue(int(str(port)[17:-1]));
             # FIX ME : END
 
         self.accept.clicked.connect(self.configure);
