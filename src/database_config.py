@@ -2,6 +2,7 @@ import sys, os;
 from PyQt5.QtWidgets import QDialog;
 from PyQt5 import uic;
 from PyQt5.QtCore import QFile, QIODevice, QTextStream;
+#from src.lib.database import DBManager;
 
 class DBConfig(QDialog):
     def __init__(self):
@@ -10,7 +11,6 @@ class DBConfig(QDialog):
 
     def setupUi(self):
         uic.loadUi("src/ui/dbconfig.ui", self);
-        #uic.loadUi(os.path.dirname(os.path.realpath(sys.argv[0])) + "/ui/dbconfig.ui", self);
 
         stylesheet = QFile("assets/qss/dialog.qss");
         stylesheet.open(QIODevice.ReadWrite | QIODevice.Text);
@@ -22,20 +22,18 @@ class DBConfig(QDialog):
         f = QFile("config/database.config");
         if f.open(QIODevice.ReadWrite | QIODevice.Text):
 
-            # FIX ME : START :
             name = f.readLine(255);
             username = f.readLine(255);
-            password = f.readLine(255); # ValueError: invalid literal for int() with base 10: ''
+            password = f.readLine(255);
             hostname = f.readLine(255);
             port = f.readLine(1000);
             f.close();
 
             self.dbName.setText(str(name)[17:-3]);
             self.username.setText(str(username)[21:-3]);
-            self.password.setText(str(password)[21:-3]); #V alueError: invalid literal for int() with base 10: ''
+            self.password.setText(str(password)[21:-3]);
             self.hostname.setText(str(hostname)[21:-3]);
             self.port.setValue(int(str(port)[17:-1]));
-            # FIX ME : END
 
         self.accept.clicked.connect(self.configure);
         self.cancel.clicked.connect(self.close);
@@ -56,3 +54,7 @@ class DBConfig(QDialog):
             f.close();
 
         self.close();
+
+    # @decorator
+    def createTables():
+        db = DBManager();

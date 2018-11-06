@@ -2,7 +2,6 @@ import sys, os;
 from PyQt5.QtWidgets import QApplication, QMainWindow;
 from PyQt5 import uic;
 from src.database_config import DBConfig;
-# from database_config import DBConfig;
 from PyQt5.QtCore import QFile, QIODevice, QTextStream;
 
 class MainWindow(QMainWindow):
@@ -12,7 +11,8 @@ class MainWindow(QMainWindow):
 
     def setupUi(self):
         uic.loadUi("src/ui/main.ui", self);
-        # uic.loadUi(os.path.dirname(os.path.realpath(sys.argv[0])) + "/ui/main.ui", self);
+
+        self.views.setCurrentIndex(0);
 
         f = QFile("config/global.config");
         if f.open(QIODevice.ReadWrite | QIODevice.Text):
@@ -32,7 +32,6 @@ class MainWindow(QMainWindow):
 
         self.dbConfigAction.triggered.connect(self.dbConfigDialog);
 
-    #FIX ME : database_config.py
     def dbConfigDialog(self):
         dbconfig = DBConfig();
         dbconfig.exec_();
