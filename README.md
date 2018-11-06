@@ -1,5 +1,4 @@
-# Agrega una descripción del software.
-## College Manager
+# College Manager
 ### Aplicacion para el uso de maestros, alumnos y administradores de cualquier institucion educativa.
 Esta aplicacion tiene la finalidad de contribuir al personal de cualquier institucion educativa en el control de su sistema.
 Permite al alumnado verificar su horario y calificaciones, asi como realizar los pagos correspondientes del curso.
