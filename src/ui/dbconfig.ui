@@ -9,139 +9,142 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>640</height>
+    <width>415</width>
+    <height>207</height>
    </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Maiandra GD</family>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Configuracion de la base de datos</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton { 
+	color: Black;
+	background-color: White;
+	 border: 3px solid black;
+   	 border-radius: 50px 20px;
+}
+
+QPushButton:hover { color: White; }
+
+QDialog{
+	background-color: gray;
+ }
+QLabel{
+	color: White;
+	font-size :5;
+
+}
+</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
   <property name="modal">
    <bool>true</bool>
   </property>
-  <widget class="QLabel" name="dbnl">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>50</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Base de datos:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="ul">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>80</y>
-     <width>61</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Usuario:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="pl">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>110</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Contraseña:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="hnl">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>140</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Host :</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="pl_2">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>170</y>
-     <width>31</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Puerto:</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="dbName">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>50</y>
+     <y>90</y>
      <width>113</width>
      <height>20</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLineEdit" name="username">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>80</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI Light</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="password">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>110</y>
+     <y>60</y>
      <width>113</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI Light</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="hostname">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>140</y>
+     <y>120</y>
      <width>113</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI Light</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QSpinBox" name="port">
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>170</y>
-     <width>42</width>
+     <y>150</y>
+     <width>71</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI Light</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QPushButton" name="accept">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>600</y>
-     <width>75</width>
-     <height>23</height>
+     <x>290</x>
+     <y>40</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Aceptar</string>
@@ -150,16 +153,138 @@
   <widget class="QPushButton" name="cancel">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>600</y>
-     <width>75</width>
-     <height>23</height>
+     <x>290</x>
+     <y>90</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Cancelar</string>
    </property>
   </widget>
+  <widget class="QLineEdit" name="username">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI Light</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>110</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="pl_2">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>16</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Puerto:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="hnl">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>16</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Host :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="pl">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>16</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Contraseña:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="ul">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>16</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Usuario:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="dbnl">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>16</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Base de datos:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>dbnl</zorder>
+  <zorder>ul</zorder>
+  <zorder>pl</zorder>
+  <zorder>hnl</zorder>
+  <zorder>pl_2</zorder>
+  <zorder>dbName</zorder>
+  <zorder>username</zorder>
+  <zorder>password</zorder>
+  <zorder>hostname</zorder>
+  <zorder>port</zorder>
+  <zorder>accept</zorder>
+  <zorder>cancel</zorder>
+  <zorder>username</zorder>
  </widget>
  <resources/>
  <connections/>
