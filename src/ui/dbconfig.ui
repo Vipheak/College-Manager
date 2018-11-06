@@ -29,7 +29,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Database Name:</string>
+    <string>Base de datos:</string>
    </property>
   </widget>
   <widget class="QLabel" name="ul">
@@ -42,7 +42,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Username:</string>
+    <string>Usuario:</string>
    </property>
   </widget>
   <widget class="QLabel" name="pl">
@@ -55,7 +55,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Password:</string>
+    <string>Contraseña:</string>
    </property>
   </widget>
   <widget class="QLabel" name="hnl">
@@ -68,7 +68,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Hostname:</string>
+    <string>Host :</string>
    </property>
   </widget>
   <widget class="QLabel" name="pl_2">
@@ -81,7 +81,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Port:</string>
+    <string>Puerto:</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="dbName">
