@@ -47,6 +47,17 @@ class DBManager(QSqlDatabase):
 
         return tuple(list);
 
+    def selectAllWhere(self, table, condition, nrows):
+        sql = "SELECT * FROM " + table + " WHERE " + condition;
+        query = QSqlQuery(sql);
+        list = [];
+        query.next();
+
+        for i in range(nrows):
+            list.append(query.value(i));
+
+        return tuple(list);
+
     def update(self, table, values, id):
         sql = "UPDATE " + table + " SET "
         for value in values: sql += str(value[0]) + " = :" +str(value[0]) + ", ";
@@ -65,5 +76,22 @@ class DBManager(QSqlDatabase):
         query.bindValue(":id", id);
         query.exec_();
 
-    def close(self): self.db.close(); self.ok = False;
+    def isValid(self, table, rowName, value):
+        sql = "SELECT " + rowName + " FROM " +  table + " WHERE " + rowName + " = :value";
+
+        query = QSqlQuery();
+        query.prepare(sql);
+        query.bindValue(":value", value);
+        query.exec_();
+        query.next();
+
+        return value == query.value(0);
+
+    def close(self):
+        self.db.close();
+        self.ok = False;
+
     def isConnected(self): return self.ok;
+
+#db = DBManager("127.0.0.1", "cm_test", "root", "", 3306);
+#db.connect();
