@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">	/*Cambiamos el color de la ventana*/
+	QDialog{
+		background-color: #5B7C74;
+	}
+
+	/*Estilos para el botón*/
+	QPushButton{
+		background-color: #ACA896;
+		border-radius: 4px;
+		border: 3px solid #101010;
+		color: #fff;
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	
+	/*Definimos el estilo para un efecto hover sobre el botón,
+	este cambiará su background cuando pasemos el mouse por
+	encima*/
+	QPushButton:hover{
+	background-color: #ff7043;
+	}
+
+	/*Definimos los estilos para los QLineEdit*/
+	QLineEdit{
+		border-radius: 3px;
+		border: 2px solid #101010;
+	}
+
+	/*Definimos los estilos para los QLabel*/
+	QLabel{
+		font-family: 'Monotype Corsiva';
+		color: #fff;
+	}
+</string>
+  </property>
+  <widget class="QTableView" name="Visualizador_buttons">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>220</y>
+     <width>451</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Imagen_Maestro">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>101</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>70</y>
+     <width>181</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="line_Profesor"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="line_NoTrabajador"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="line_Grado"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="Imagen_Escuela">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>91</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Titulo_app">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>11</y>
+     <width>291</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monotype Corsiva</family>
+     <pointsize>36</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>College Manager</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>70</y>
+     <width>84</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_Profesor">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Profesor:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_NoTrabajador">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>No.Trabajador:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Grado">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Grado:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_CalificarM">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>180</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calificar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_HorarioM">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Horario</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

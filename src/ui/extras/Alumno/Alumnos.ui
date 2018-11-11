@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Alumnos</class>
+ <widget class="QDialog" name="Alumnos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">	/*Cambiamos el color de la ventana*/
+	QDialog{
+		background-color: #5F584E;
+	}
+
+	/*Estilos para el botón*/
+	QPushButton{
+		background-color: #ACA896;
+		border-radius: 4px;
+		border: 3px solid #101010;
+		color: #fff;
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	
+	/*Definimos el estilo para un efecto hover sobre el botón,
+	este cambiará su background cuando pasemos el mouse por
+	encima*/
+	QPushButton:hover{
+	background-color: #ff7043;
+	}
+
+	/*Definimos los estilos para los QLineEdit*/
+	QLineEdit{
+		border-radius: 3px;
+		border: 2px solid #101010;
+	}
+
+	/*Definimos los estilos para los QLabel*/
+	QLabel{
+		font-family: 'Monotype Corsiva';
+		color: #fff;
+	}
+
+	/*Definimos los estilos para los QLabels cuyos nombres son
+	'label_usuario' y 'label-password'*/
+	#label_usuario, #label_password{
+		font-size: 17px;
+		color: #212121;
+	}
+	
+	/*Estilo para el QLable cuyo nombre es #label_login*/
+	#label_login{
+		font-size:30px;
+		color: #fff;
+	}</string>
+  </property>
+  <widget class="QLabel" name="Titulo_app">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>0</y>
+     <width>291</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monotype Corsiva</family>
+     <pointsize>36</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>College Manager</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Imagen_Alumno">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>101</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Imagen_Escuela">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>20</y>
+     <width>91</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="Visualizador_buttons">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>230</y>
+     <width>451</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>60</y>
+     <width>61</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_Alumno">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Alumno:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Matricula">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Matricula:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Carrera">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Carrera:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Semestre">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Semestre:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>59</y>
+     <width>181</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="line_Alumno"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="line_Matricula"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="line_Carrera"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="line_Semestre"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>411</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_KardexA">
+      <property name="text">
+       <string>Kardex</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_HorarioA">
+      <property name="text">
+       <string>Horario</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_PagosA">
+      <property name="text">
+       <string>Pagos</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
