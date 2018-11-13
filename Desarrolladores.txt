@@ -6,5 +6,6 @@
 ║ Jose Guadalupe Rodriguez Palacios ║ 1738673   ║ jose_undertaker@live.com     ║
 ║ Michael David Bateman Perez       ║ 1889405   ║ mikebateman98@gmail.com      ║
 ║ Andrés Arrazola y Meza            ║ 1884455   ║ andresarrazola.96@gmail.com  ║
-║ Héctor Tamez Arévalo              ║ 1796321   ║ tetintamez2@hotmail.com      ║
+║ Héctor Tamez Arévalo              ║ 1796321   ║ tetintamez2@hotmail.com      ║ 
+║Diego Patricio Zuñiga Salazar      ║ 1726055   ║ diegopzs@hotmail.com         ║
 ╚═══════════════════════════════════╩═══════════╩══════════════════════════════╝
