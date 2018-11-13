@@ -6,17 +6,17 @@
  - [x] Crear archivo CONTRIBUTORS.md
  - [x] Crear clase para la conexión a la base de datos.
  - [x] Crear CRUD.
- - [ ] Crear wireframes de las vistas y sus respectivas funciones.
-   - [ ] Wireframe de la vista Administrador.
-   - [ ] Wireframe de la vista Profesor.
-   - [ ] Wireframe de la vista Alumno.
- - [ ] Crear los archivos UI basado en los wireframes.
-   - [ ] UI de la vista Administrador.
-   - [ ] Ui de la vista Profesor.
-   - [ ] UI de la vista Alumno.
+ - [x] Crear wireframes de las vistas y sus respectivas funciones.
+   - [x] Wireframe de la vista Administrador.
+   - [x] Wireframe de la vista Profesor.
+   - [x] Wireframe de la vista Alumno.
+ - [x] Crear los archivos UI basado en los wireframes.
+   - [x] UI de la vista Administrador.
+   - [x] Ui de la vista Profesor.
+   - [x] UI de la vista Alumno.
  - [ ] Crear funcion de creacion de tablas ER.
- - [ ] Crear agregar estilos.
-   - [ ] Estilos de la vista Administrador.
-   - [ ] Estilos de la vista Profesor.
-   - [ ] Estilos de la vista Alumno.
+ - [x] Crear agregar estilos.
+   - [x] Estilos de la vista Administrador.
+   - [x] Estilos de la vista Profesor.
+   - [x] Estilos de la vista Alumno.
  - [ ] Crear documentacion.
