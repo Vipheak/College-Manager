@@ -87,7 +87,7 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="page_Alumno">
+      <widget class="QWidget" name="pageAlumno">
        <property name="minimumSize">
         <size>
          <width>801</width>
@@ -148,26 +148,19 @@
 		color: #fff;
 	}</string>
        </property>
-       <widget class="QStackedWidget" name="stackedWidget">
+       <widget class="QStackedWidget" name="viewAlumno">
         <property name="geometry">
          <rect>
-          <x>9</x>
-          <y>29</y>
+          <x>0</x>
+          <y>30</y>
           <width>801</width>
           <height>431</height>
          </rect>
         </property>
-        <widget class="QWidget" name="page_4">
-         <widget class="QTableView" name="Visualizador_buttons">
-          <property name="geometry">
-           <rect>
-            <x>140</x>
-            <y>240</y>
-            <width>451</width>
-            <height>192</height>
-           </rect>
-          </property>
-         </widget>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="pageHome">
          <widget class="QWidget" name="layoutWidget_2">
           <property name="geometry">
            <rect>
@@ -231,7 +224,7 @@
             <x>210</x>
             <y>80</y>
             <width>61</width>
-            <height>101</height>
+            <height>111</height>
            </rect>
           </property>
           <property name="font">
@@ -340,10 +333,685 @@
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="page_5"/>
+        <widget class="QWidget" name="pageHorario">
+         <widget class="QLabel" name="label_Matricula_11">
+          <property name="geometry">
+           <rect>
+            <x>860</x>
+            <y>213</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Matricula:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Semestre_11">
+          <property name="geometry">
+           <rect>
+            <x>860</x>
+            <y>270</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Semestre:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Alumno_9">
+          <property name="geometry">
+           <rect>
+            <x>950</x>
+            <y>180</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_13">
+          <property name="geometry">
+           <rect>
+            <x>1220</x>
+            <y>100</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Matricula_9">
+          <property name="geometry">
+           <rect>
+            <x>950</x>
+            <y>210</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Carrera_9">
+          <property name="geometry">
+           <rect>
+            <x>950</x>
+            <y>240</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Semestre_9">
+          <property name="geometry">
+           <rect>
+            <x>950</x>
+            <y>270</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_8">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>330</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Carrera_11">
+          <property name="geometry">
+           <rect>
+            <x>860</x>
+            <y>242</y>
+            <width>59</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Carrera:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_13">
+          <property name="geometry">
+           <rect>
+            <x>860</x>
+            <y>110</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Alumno_11">
+          <property name="geometry">
+           <rect>
+            <x>860</x>
+            <y>184</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Alumno:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Alumno_12">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>110</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Alumno:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Matricula_10">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>136</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_9">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>256</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Alumno_12">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>36</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_14">
+          <property name="geometry">
+           <rect>
+            <x>660</x>
+            <y>26</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Semestre_10">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>196</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Carrera_10">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>166</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_14">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>36</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Carrera_12">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>168</y>
+            <width>59</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Carrera:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Matricula_12">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>139</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Matricula:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Semestre_12">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>196</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Semestre:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Alumno_10">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>106</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="pagePagos">
+         <widget class="QLabel" name="label_Carrera_13">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>169</y>
+            <width>59</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Carrera:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Alumno_11">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>107</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_10">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>257</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_15">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>37</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Matricula_13">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>140</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Matricula:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Alumno_13">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>111</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Alumno:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Carrera_11">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>167</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_15">
+          <property name="geometry">
+           <rect>
+            <x>640</x>
+            <y>27</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Alumno_13">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>37</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Matricula_11">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>137</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Semestre_11">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>197</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Semestre_13">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>197</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Semestre:</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="pageCalificaciones">
+         <widget class="QTableView" name="Visualizador_buttons">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>230</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Alumno_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>10</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>10</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_3">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>0</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Semestre_3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>170</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Semestre:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Alumno_3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>84</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Alumno:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Carrera_3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>142</y>
+            <width>59</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Carrera:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Matricula_3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>113</y>
+            <width>59</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Matricula:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Semestre_5">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>170</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Matricula_5">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>110</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Carrera_5">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>140</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Alumno_5">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>80</y>
+            <width>169</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_Maestro">
+      <widget class="QWidget" name="viewMaestro">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -390,6 +1058,9 @@
           <width>811</width>
           <height>481</height>
          </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
         </property>
         <widget class="QWidget" name="page_6">
          <widget class="QGraphicsView" name="Imagen_Maestro">
@@ -553,7 +1224,7 @@
         <widget class="QWidget" name="page_7"/>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="viewAdministrador">
        <widget class="QStackedWidget" name="stackedWidget_3">
         <property name="geometry">
          <rect>
