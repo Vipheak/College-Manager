@@ -24,7 +24,8 @@ class Login(QDialog):
         self.cancel.clicked.connect(self.close);
 
     def isLogged(self):
-        db = DBManager("127.0.0.1", "cm_test", "root", "", 3306); # Agregar funciones get para configuracion de base de datos.
+        dbconfig = DBConfig();
+        db = DBManager(dbconfig.getHostname(), dbconfig.getName(), dbconfig.getUsername(), dbconfig.getPassword(), dbconfig.getPort());
         db.connect();
 
         if db.isValid("usuarios", "username", self.user.text()) and db.isValid("usuarios", "password", self.password.text()):

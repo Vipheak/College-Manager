@@ -5,6 +5,12 @@ from PyQt5.QtCore import QFile, QIODevice, QTextStream;
 #from src.lib.database import DBManager;
 
 class DBConfig(QDialog):
+    nameInConfig = "";
+    usernameInConfig = "";
+    passwordInConfig = "";
+    hostnameInConfig = "";
+    portInConfig = 0;
+
     def __init__(self):
         super().__init__();
         self.setupUi();
@@ -29,11 +35,17 @@ class DBConfig(QDialog):
             port = f.readLine(1000);
             f.close();
 
-            self.dbName.setText(str(name)[17:-3]);
-            self.username.setText(str(username)[21:-3]);
-            self.password.setText(str(password)[21:-3]);
-            self.hostname.setText(str(hostname)[21:-3]);
-            self.port.setValue(int(str(port)[17:-1]));
+            self.nameInConfig = str(name)[17:-3]
+            self.usernameInConfig = str(username)[21:-3]
+            self.passwordInConfig = str(password)[21:-3]
+            self.hostnameInConfig = str(hostname)[21:-3]
+            self.portInConfig = int(str(port)[17:-1])
+
+            self.dbName.setText(self.nameInConfig);
+            self.username.setText(self.usernameInConfig);
+            self.password.setText(self.passwordInConfig);
+            self.hostname.setText(self.hostnameInConfig);
+            self.port.setValue(self.portInConfig);
 
         self.accept.clicked.connect(self.configure);
         self.cancel.clicked.connect(self.close);
@@ -54,6 +66,12 @@ class DBConfig(QDialog):
             f.close();
 
         self.close();
+
+    def getName(self): return self.nameInConfig;
+    def getUsername(self): return self.usernameInConfig;
+    def getPassword(self): return self.passwordInConfig;
+    def getHostname(self): return self.hostnameInConfig;
+    def getPort(self): return self.portInConfig;
 
     # @decorator
     def createTables():
