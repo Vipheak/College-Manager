@@ -14,10 +14,5 @@ def check_pw_hash (password, hash):
 
     return False
 
-def capa_seguridad (key, hash):
-    key: b
-    cif == hash
-    for index, val in enumerate (hash)
-    c = ord(val) ^ ord(key[0])
-    cif += str(chr(c))
-    return cif
+
+
