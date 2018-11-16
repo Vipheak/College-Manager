@@ -59,8 +59,8 @@ QLabel{
   <widget class="QLineEdit" name="dbName">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>90</y>
+     <x>150</x>
+     <y>150</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -77,8 +77,8 @@ QLabel{
   <widget class="QLineEdit" name="password">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>60</y>
+     <x>150</x>
+     <y>90</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -95,8 +95,8 @@ QLabel{
   <widget class="QLineEdit" name="hostname">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>120</y>
+     <x>150</x>
+     <y>60</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -114,7 +114,7 @@ QLabel{
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>150</y>
+     <y>20</y>
      <width>71</width>
      <height>22</height>
     </rect>
@@ -175,8 +175,8 @@ QLabel{
   <widget class="QLineEdit" name="username">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>30</y>
+     <x>150</x>
+     <y>120</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -190,7 +190,7 @@ QLabel{
     </font>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -272,13 +272,8 @@ QLabel{
     </item>
    </layout>
   </widget>
-  <zorder>dbnl</zorder>
-  <zorder>ul</zorder>
-  <zorder>pl</zorder>
-  <zorder>hnl</zorder>
-  <zorder>pl_2</zorder>
+  <zorder>layoutWidget</zorder>
   <zorder>dbName</zorder>
-  <zorder>username</zorder>
   <zorder>password</zorder>
   <zorder>hostname</zorder>
   <zorder>port</zorder>

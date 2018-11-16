@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>862</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>College Manager</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Cambiamos el color de la ventana*/
+	QWidget{
+		background-color: #656792;
+	}
+
+	/*Estilos para el botón*/
+	QPushButton{
+		background-color: #757DED;
+		border-radius: 4px;
+		border: 3px solid #101010;
+		color: #fff;
+		font-family: 'Roboto';
+		font-size: 17px;
+	}
+	
+	/*Definimos el estilo para un efecto hover sobre el botón,
+	este cambiará su background cuando pasemos el mouse por
+	encima*/
+	QPushButton:hover{
+	background-color:#53F0F3 ;
+	}
+
+	/*Definimos los estilos para los QLineEdit*/
+	QLineEdit{
+		border-radius: 3px;
+		border: 2px solid #101010;
+		font-color: #020202;
+	}
+
+	/*Definimos los estilos para los QLabel*/
+	QLabel{
+		font-family: 'Monotype Corsiva';
+		color: #fff;
+	}
+
+	/*Definimos los estilos para los QLabels cuyos nombres son
+	'label_usuario' y 'label-password'*/
+	#label_usuario, #label_password{
+		font-size: 17px;
+		color: #212121;
+	}
+	
+	/*Estilo para el QLable cuyo nombre es #label_login*/
+	#label_login{
+		font-size:30px;
+		color: #fff;
+	}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="body">
+      <item>
+       <layout class="QVBoxLayout" name="header">
+        <item>
+         <widget class="QLabel" name="title_2">
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">text-align: center</string>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="role_2">
+          <property name="text">
+           <string>Administrador</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="userData">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>N° ID: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="nID_2">
+          <property name="text">
+           <string>Null</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Nombre:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="name_2">
+          <property name="text">
+           <string>Null</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="nav">
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="userManagerBtn">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Administrar Usuarios</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>28</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="scheduleBtn">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Horarios</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="views">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="userManager">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QTableWidget" name="tableUsers"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>Actualizar Usuario</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>Agregar Usuario</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="text">
+               <string>Borrar Usuario</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="schedule"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>862</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfiguracion">
+    <property name="title">
+     <string>Configuracion</string>
+    </property>
+    <addaction name="dbConfigAction"/>
+   </widget>
+   <addaction name="menuConfiguracion"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="dbConfigAction">
+   <property name="text">
+    <string>Base de datos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
