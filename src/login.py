@@ -3,12 +3,14 @@ from PyQt5.QtWidgets import QDialog;
 from PyQt5 import uic;
 from PyQt5.QtCore import QFile, QIODevice, QTextStream;
 from src.lib.database import DBManager;
+from src.database_config import DBConfig;
 
 class Login(QDialog):
     userData = False;
 
     def __init__(self):
         super().__init__();
+        self.checkFirstLogin();
         self.setupUi();
 
     def setupUi(self):
@@ -34,3 +36,21 @@ class Login(QDialog):
 
     def getRole(self):
         return self.userData[3];
+
+    def checkFirstLogin(self):
+        f = QFile("config/global.config");
+        if f.open(QIODevice.ReadWrite | QIODevice.Text):
+            isFirstLogin = str(f.readLine())[18:-3] == "True";
+            f.close();
+
+        if isFirstLogin:
+            f.remove("config/global.config");
+            if f.open(QIODevice.ReadWrite | QIODevice.Text):
+
+                stream = QTextStream(f);
+                stream << "is_first_login: False";
+
+                f.close();
+
+            dbconfig = DBConfig();
+            dbconfig.exec_();
