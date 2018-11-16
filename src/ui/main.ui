@@ -152,10 +152,15 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>30</y>
-          <width>801</width>
+          <y>0</y>
+          <width>831</width>
           <height>431</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+background-image: url(/assets/images/fondo1.jpg);
+}</string>
         </property>
         <property name="currentIndex">
          <number>2</number>
@@ -1011,7 +1016,7 @@
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="viewMaestro">
+      <widget class="QWidget" name="pageMaestro">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -1050,19 +1055,177 @@
 		color: #fff;
 	}</string>
        </property>
-       <widget class="QStackedWidget" name="stackedWidget_2">
+       <widget class="QStackedWidget" name="viewMaestro">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>0</y>
+          <x>-10</x>
+          <y>20</y>
           <width>811</width>
           <height>481</height>
          </rect>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>2</number>
         </property>
-        <widget class="QWidget" name="page_6">
+        <widget class="QWidget" name="pageHomeM">
+         <widget class="QLabel" name="label_NoTrabajador_15">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>170</y>
+            <width>82</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>No.Trabajador:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Grado_14">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>210</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_20">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>50</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_HorarioM_14">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>260</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Horario</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_20">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>60</y>
+            <width>321</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Maestro_14">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>50</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Grado_15">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>200</y>
+            <width>82</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Grado:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Profesor_15">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>140</y>
+            <width>82</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Profesor:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Profesor_14">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>150</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_NoTrabajador_14">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>180</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_CalificarM_14">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>260</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Calificar</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="pageCalificar">
          <widget class="QGraphicsView" name="Imagen_Maestro">
           <property name="geometry">
            <rect>
@@ -1221,25 +1384,186 @@
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="page_7"/>
+        <widget class="QWidget" name="pageHorarioM">
+         <widget class="QPushButton" name="pushButton_HorarioM_12">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>230</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Horario</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Maestro_12">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>30</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget_25">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>110</y>
+            <width>181</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <widget class="QLineEdit" name="line_Profesor_12"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_NoTrabajador_12"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_Grado_12"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_17">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>270</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_18">
+          <property name="geometry">
+           <rect>
+            <x>610</x>
+            <y>40</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget_26">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>110</y>
+            <width>84</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_26">
+           <item>
+            <widget class="QLabel" name="label_Profesor_13">
+             <property name="font">
+              <font>
+               <family>Monotype Corsiva</family>
+               <pointsize>11</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="text">
+              <string>Profesor:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_NoTrabajador_13">
+             <property name="font">
+              <font>
+               <family>Monotype Corsiva</family>
+               <pointsize>11</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="text">
+              <string>No.Trabajador:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_Grado_13">
+             <property name="font">
+              <font>
+               <family>Monotype Corsiva</family>
+               <pointsize>11</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grado:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_18">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>30</y>
+            <width>321</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_CalificarM_12">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>230</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Calificar</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="viewAdministrador">
-       <widget class="QStackedWidget" name="stackedWidget_3">
+      <widget class="QWidget" name="pageAdministrador">
+       <widget class="QStackedWidget" name="viewAdministrador">
         <property name="geometry">
          <rect>
-          <x>19</x>
-          <y>29</y>
+          <x>0</x>
+          <y>20</y>
           <width>801</width>
           <height>431</height>
          </rect>
         </property>
-        <widget class="QWidget" name="page_8">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="pageHomeA">
          <widget class="QGraphicsView" name="Imagen_Usuario_2">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>20</y>
+            <x>151</x>
+            <y>38</y>
             <width>101</width>
             <height>81</height>
            </rect>
@@ -1248,8 +1572,8 @@
          <widget class="QGraphicsView" name="Imagen_Escuela_6">
           <property name="geometry">
            <rect>
-            <x>520</x>
-            <y>20</y>
+            <x>631</x>
+            <y>48</y>
             <width>91</width>
             <height>81</height>
            </rect>
@@ -1258,8 +1582,8 @@
          <widget class="QLabel" name="Titulo_app_6">
           <property name="geometry">
            <rect>
-            <x>180</x>
-            <y>-10</y>
+            <x>291</x>
+            <y>18</y>
             <width>291</width>
             <height>61</height>
            </rect>
@@ -1278,8 +1602,8 @@
          <widget class="QWidget" name="layoutWidget_13">
           <property name="geometry">
            <rect>
-            <x>160</x>
-            <y>50</y>
+            <x>271</x>
+            <y>78</y>
             <width>70</width>
             <height>71</height>
            </rect>
@@ -1324,8 +1648,8 @@
          <widget class="QWidget" name="layoutWidget_15">
           <property name="geometry">
            <rect>
-            <x>250</x>
-            <y>50</y>
+            <x>361</x>
+            <y>78</y>
             <width>181</width>
             <height>81</height>
            </rect>
@@ -1348,35 +1672,324 @@
             <height>31</height>
            </rect>
           </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QPushButton" name="pushButton_HorarioAd_3">
-             <property name="text">
-              <string>Generar Horarios</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_PagosAd_3">
-             <property name="text">
-              <string>Generar Pagos</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
+          <layout class="QHBoxLayout" name="horizontalLayout_5"/>
          </widget>
-         <widget class="QTableView" name="Visualizador_buttons_6">
+         <widget class="QPushButton" name="pushButton_PagosAd_3">
           <property name="geometry">
            <rect>
-            <x>90</x>
-            <y>200</y>
+            <x>440</x>
+            <y>180</y>
+            <width>201</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Pagos</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_HorarioAd_3">
+          <property name="geometry">
+           <rect>
+            <x>232</x>
+            <y>180</y>
+            <width>202</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Horarios</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="pagePagosA">
+         <widget class="QPushButton" name="pushButton_PagosAd_12">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>210</y>
+            <width>201</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Pagos</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_25">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>20</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_NoUsuario_9">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>120</y>
+            <width>68</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>No.Usuario:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Usuario_Nombre_9">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>150</y>
+            <width>68</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nombre:</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Usuario_8">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>30</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_25">
+          <property name="geometry">
+           <rect>
+            <x>650</x>
+            <y>50</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_21">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>260</y>
             <width>451</width>
             <height>192</height>
            </rect>
           </property>
          </widget>
+         <widget class="QLineEdit" name="line_Usuario_nombre_9">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>160</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_Usuario_9">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>120</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_HorarioAd_9">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>210</y>
+            <width>202</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Horarios</string>
+          </property>
+         </widget>
         </widget>
-        <widget class="QWidget" name="page_9"/>
+        <widget class="QWidget" name="pageHorarios">
+         <widget class="QLabel" name="label_Usuario_Nombre_4">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>140</y>
+            <width>68</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nombre:</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_HorarioAd_4">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>200</y>
+            <width>202</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Horarios</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_PagosAd_4">
+          <property name="geometry">
+           <rect>
+            <x>319</x>
+            <y>22</y>
+            <width>201</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Pagos</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_NoUsuario_4">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>110</y>
+            <width>68</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>No.Usuario:</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Usuario_3">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>20</y>
+            <width>101</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_Usuario_nombre_4">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>150</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableView" name="Visualizador_buttons_18">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>250</y>
+            <width>451</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_Usuario_4">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>110</y>
+            <width>179</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="Imagen_Escuela_19">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>40</y>
+            <width>91</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Titulo_app_19">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>10</y>
+            <width>291</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Monotype Corsiva</family>
+            <pointsize>36</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>College Manager</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_PagosAd_5">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>200</y>
+            <width>201</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Generar Pagos</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
      </widget>
