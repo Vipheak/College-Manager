@@ -87,6 +87,8 @@ class DBManager(QSqlDatabase):
 
         return value == query.value(0);
 
+    def query(self, sql): query = QSqlQuery(sql);
+
     def close(self):
         self.db.close();
         self.ok = False;
