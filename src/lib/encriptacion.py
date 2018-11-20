@@ -14,5 +14,14 @@ def check_pw_hash (password, hash):
 
     return False
 
+print("contrasenia: " + password);
+pwHah=make_pw_hash(password);
+print("Hash: " + str(pwHash));
+
+if check_pw_hash(password, pwHash):
+        print("El hash es correcto");
+       else:
+        print("El hash es incorrecto");
+
 
 
