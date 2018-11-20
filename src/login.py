@@ -4,9 +4,10 @@ from PyQt5 import uic;
 from PyQt5.QtCore import QFile, QIODevice, QTextStream;
 from src.lib.database import DBManager;
 from src.database_config import DBConfig;
+from src.create_tables import tablesRun;
 
 class Login(QDialog):
-    userData = False;
+    userData = None;
 
     def __init__(self):
         super().__init__();
@@ -28,15 +29,16 @@ class Login(QDialog):
         db = DBManager(dbconfig.getHostname(), dbconfig.getName(), dbconfig.getUsername(), dbconfig.getPassword(), dbconfig.getPort());
         db.connect();
 
-        if db.isValid("usuarios", "username", self.user.text()) and db.isValid("usuarios", "password", self.password.text()):
-            self.userData = db.selectAllWhere("usuarios", "username = '" + self.user.text() + "'", 4);
+        if db.isValid("users", "username", self.user.text()) and db.isValid("users", "password", self.password.text()):
+            self.userData = db.selectAllWhere("users", "username = '" + self.user.text() + "'", 9);
             self.close();
             return True;
         else:
             return False;
 
-    def getRole(self):
-        return self.userData[3];
+    def getId(self): return self.userData[0];
+    def getFullName(self): return str(self.userData[4]) + " " + str(self.userData[5]) + " " + str(self.userData[6]);
+    def getRole(self): return self.userData[3];
 
     def checkFirstLogin(self):
         f = QFile("config/global.config");
@@ -55,3 +57,5 @@ class Login(QDialog):
 
             dbconfig = DBConfig();
             dbconfig.exec_();
+
+            createTables = tablesRun();
