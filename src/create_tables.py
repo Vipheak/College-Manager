@@ -1,5 +1,5 @@
-from lib.database import DBManager;
-from database_config import DBConfig;
+from src.lib.database import DBManager;
+from src.database_config import DBConfig;
 from PyQt5.QtWidgets import QApplication;
 
 class tablesRun():
