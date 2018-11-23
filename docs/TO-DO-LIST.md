@@ -1,7 +1,9 @@
 # To Do List
 
  - [x] Crear Dialog de configuración de base de datos.
- - [ ] Crear Libreria de encriptacion con funcion hash y de cifrado/decifrado
+ - [ ] Crear Librería de criptografía
+   - [ ] Función Hash indescifrable.
+   - [ ] Funciones de descifrado y cifrado complejos
  - [x] Crear archivo README.md con su respectiva descripción.
  - [x] Crear archivo CONTRIBUTORS.md
  - [x] Crear clase para la conexión a la base de datos.
@@ -14,9 +16,14 @@
    - [x] UI de la vista Administrador.
    - [x] Ui de la vista Profesor.
    - [x] UI de la vista Alumno.
- - [ ] Crear funcion de creacion de tablas ER.
+ - [ ] Crear Diagrama ER
+ - [ ] Mejorar la HCI.
+   - [ ] Agrega aspectos visuales al UI/UX.
+ - [x] Crear función de creacion de tablas ER.
+ - [ ] Poner función para cerrar la DB donde se necesite.
  - [x] Crear agregar estilos.
    - [x] Estilos de la vista Administrador.
    - [x] Estilos de la vista Profesor.
    - [x] Estilos de la vista Alumno.
- - [ ] Crear documentacion.
+ - [ ] Eliminar código basura.
+ - [ ] Crear documentación.
