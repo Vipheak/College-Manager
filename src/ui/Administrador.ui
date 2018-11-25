@@ -209,12 +209,16 @@
         <widget class="QWidget" name="userManager">
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <widget class="QTableWidget" name="tableUsers"/>
+           <widget class="QTableWidget" name="tableUsers">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout">
             <item>
-             <widget class="QPushButton" name="pushButton_2">
+             <widget class="QPushButton" name="updateUserBtn">
               <property name="text">
                <string>Actualizar Usuario</string>
               </property>
@@ -228,7 +232,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_3">
+             <widget class="QPushButton" name="deleteUserBtn">
               <property name="text">
                <string>Borrar Usuario</string>
               </property>
