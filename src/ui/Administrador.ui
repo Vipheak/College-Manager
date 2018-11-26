@@ -213,6 +213,9 @@
             <property name="enabled">
              <bool>true</bool>
             </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
            </widget>
           </item>
           <item>
@@ -245,7 +248,113 @@
         <widget class="QWidget" name="schedule">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QTableWidget" name="tableWidget"/>
+           <widget class="QTableWidget" name="scheduleTable">
+            <row>
+             <property name="text">
+              <string>7:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>8:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>9:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>10:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>11:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>12:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>13:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>14:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>15:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>16:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>17:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>18:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>19:00</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>20:00</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Lunes</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Martes</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Miercoles</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Jueves</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Viernes</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Sabado</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Domingo</string>
+             </property>
+            </column>
+           </widget>
           </item>
          </layout>
         </widget>

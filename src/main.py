@@ -27,6 +27,7 @@ class MainWindow(QMainWindow):
                 self.acceptAddUser.clicked.connect(self.addUser);
                 self.updateUserBtn.clicked.connect(self.EditUser);
                 self.deleteUserBtn.clicked.connect(self.DelUser);
+
             self.showFullScreen();
             self.dbConfigAction.triggered.connect(self.dbConfigDialog);
         else:
@@ -56,7 +57,6 @@ class MainWindow(QMainWindow):
         values = db.select("users", 10);
         row = 0;
 
-
         for value in values:
             self.tableUsers.insertRow(row);
 
@@ -74,14 +74,15 @@ class MainWindow(QMainWindow):
             self.userManagerBtn.setEnabled(False);
             #self.close();
 
-    def addUserClicked(self): 
+    def addUserClicked(self):
     	self.views.setCurrentIndex(2);
+
     	while(self.tableUsers.rowCount() > 0):
     		self.tableUsers.removeRow(0);
+
     	self.userManagerBtn.setEnabled(True);
 
     def addUser(self):
-
         dbc = DBConfig();
         dbm = DBManager(dbc.getHostname(), dbc.getName(), dbc.getUsername(), dbc.getPassword(), dbc.getPort());
 
@@ -135,15 +136,6 @@ class MainWindow(QMainWindow):
 
         self.views.setCurrentIndex(0);
 
-  
-
-    def scheduleClicked(self): 
-    	self.userManagerBtn.setEnabled(True);
-    	while (self.tableUsers.rowCount() > 0):
-    		self.tableUsers.removeRow(0);
-
-    	self.views.setCurrentIndex(1);
-    	#vista para checar horarios es el Index 1
     #def UpdateUser(self):
     def EditUser(self):
     	dbc = DBConfig()
@@ -175,3 +167,9 @@ class MainWindow(QMainWindow):
     	id = self.tableUsers.item(row,0).text()
     	self.tableUsers.removeRow(row);
     	dbm.delete("users",id);
+
+    def scheduleClicked(self):
+        self.userManagerBtn.setEnabled(True);
+        while (self.tableUsers.rowCount() > 0): self.tableUsers.removeRow(0);
+
+        self.views.setCurrentIndex(1);
