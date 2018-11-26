@@ -18,7 +18,7 @@ class tablesRun():
         +"firstSurname varchar(40), "
         +"secondSurname varchar(40), "
         +"email varchar(40), "
-        +"phone integer(10), "
+        +"phone varchar(32), "
         +"address varchar(40) "
         +"); "
 
@@ -39,6 +39,40 @@ class tablesRun():
         +"carrera varchar(40), "
         +"FOREIGN KEY (teacher_id) REFERENCES users(id), "
         +"FOREIGN KEY (students_id) REFERENCES users(id) "
+        +"); "
+
+        +"CREATE TABLE schedule ( "
+        +"id integer(2) PRIMARY KEY NOT NULL AUTO_INCREMENT, "
+        +"monday varchar(64), "
+        +"tuesday varchar(64), "
+        +"wednesday varchar(64), "
+        +"thursday varchar(64), "
+        +"friday varchar(64), "
+        +"saturday varchar(64), "
+        +"sunday varchar(64) "
         +"); ");
 
         dbm.query(SQL);
+
+        dbm.insert("users", (
+            ("username", "Owner"),
+            ("password", "Renwo"),
+            ("role", "Admin"),
+            ("name", "Owner"),
+            ("firstSurname", ""),
+            ("secondSurname", ""),
+            ("email", "Owner@email.com"),
+            ("phone", "5555555555"),
+            ("address", "Owner Residence s.t.")
+        ));
+
+        for i in range(0, 14):
+            dbm.insert("schedule", (
+                ("monday", ""),
+                ("tuesday", ""),
+                ("wednesday", ""),
+                ("thursday", ""),
+                ("friday", ""),
+                ("saturday", ""),
+                ("sunday", "")
+            ));
