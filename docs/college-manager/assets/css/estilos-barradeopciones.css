@@ -1,0 +1,56 @@
+/*ESTILOS GENERALES*/
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+nav li{
+	line-height: 3rem;
+	position: relative;
+	width: 200px;
+}
+.menu ul{
+	position: absolute;
+}
+nav a{
+	color: #FAFBFB;
+	display:block;
+	padding: 0 2.5em;
+	text-decoration: none;
+	transition: .4s;
+}
+nav a:hover {
+	background: rgba(0,0,0,.5);
+}
+
+/*PRIMER NIVEL*/
+.menu {
+	background: #255F3F;
+	display: table;
+	width: 100%;
+	font-size: 20px;
+}
+.menu> li {
+	float:left;
+}
+
+/*SEGUNDO NIVEL*/
+nav li li {
+	background: #217845;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s; 
+	width: 300px;
+}
+nav li:hover > ul > li{
+	max-height: 1000px;
+	overflow: visible;
+}
+.menu > li > ul {
+	top: 100%;
+}
+/*TERCER NIVEL*/
+.menu ul ul{
+	left:100%;
+	top: 0;
+}
+

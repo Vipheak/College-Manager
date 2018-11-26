@@ -1,0 +1,29 @@
+body{
+	font-family: Arial;
+	position:relative;
+
+}
+
+input[type=number]{
+	width: 150px;
+	height: 20px;
+	font: 14px normal normal uppercase helvetica,arial, serif;
+	padding-left:0px;
+}
+textarea{
+	width: 470px;
+	height: 110px;
+	font: 14px normal normal uppercase helvetica,arial,serif;
+}
+p{
+	text-shadow:0 1px #fff;
+	font-size: 24px;
+	text-align:center;
+
+}
+select{
+	width: 150px;
+	height: 30px;
+	font: 14px normal normal uppercase helvetica,arial, serif;
+	padding-left:0px;
+}
